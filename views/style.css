@@ -32,7 +32,7 @@ hr.bucketDivider
 	clear: left;
 }
 
-#revDivider .a-divider-inner, hr.bucketDivider
+hr.bucketDivider
 {
 	border-right-width: 0px;
 	border-bottom-width: 0px;
@@ -99,17 +99,6 @@ h2
 	line-height: 1.3;
 }
 
-#AUI_A9AdsMiddleBoxTop h2,
-#customer-reviews_feature_div h2,
-#customerReviewsHeader,
-#detailpage-click2call-header,
-#hmdFormDiv h2,
-#need-help-deciding .secHeader,
-#pf-fitment-wrapper h2,
-#revMHLContainer h2,
-#reviewBucketHeader,
-#rhfMainHeading,
-#sponsored-products-dp_feature_div h2,
 .bucket h2,
 .cdInlineAskBoxTitle,
 .cdQuestionAnswerHeader,
