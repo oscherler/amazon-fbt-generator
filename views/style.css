@@ -1,0 +1,1014 @@
+*
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	font-size: 13px;
+	line-height: 19px;
+	color: rgb( 17, 17, 17 );
+	font-family: Arial, sans-serif;
+}
+
+hr
+{
+	background-color: transparent;
+	display: block;
+	height: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: rgb( 231, 231, 231 );
+	line-height: 19px;
+	margin-top: 0px;
+	margin-bottom: 14px;
+}
+
+hr.bucketDivider
+{
+	clear: left;
+}
+
+#revDivider .a-divider-inner, hr.bucketDivider
+{
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-right-style: initial;
+	border-bottom-style: initial;
+	border-left-style: initial;
+	border-right-color: initial;
+	border-bottom-color: initial;
+	border-left-color: initial;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	background-image: initial !important;
+	background-repeat-x: initial !important;
+	background-repeat-y: initial !important;
+	background-attachment: initial !important;
+	background-position-x: 0px !important;
+	background-position-y: 0px !important;
+	background-origin: initial !important;
+	background-clip: initial !important;
+	background-color: initial !important;
+	background-size: initial !important;
+	border-top-width: 1px !important;
+	border-top-style: solid !important;
+	border-top-color: rgb( 204, 204, 204) !important;
+	margin-bottom: -36px !important;
+	height: 44px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+h1,
+h2,
+h3,
+h4
+{
+	font-family: Arial, sans-serif;
+	text-rendering: optimizelegibility;
+	padding-bottom: 4px;
+}
+
+h2
+{
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 1.3;
+}
+
+#AUI_A9AdsMiddleBoxTop h2,
+#customer-reviews_feature_div h2,
+#customerReviewsHeader,
+#detailpage-click2call-header,
+#hmdFormDiv h2,
+#need-help-deciding .secHeader,
+#pf-fitment-wrapper h2,
+#revMHLContainer h2,
+#reviewBucketHeader,
+#rhfMainHeading,
+#sponsored-products-dp_feature_div h2,
+.bucket h2,
+.cdInlineAskBoxTitle,
+.cdQuestionAnswerHeader,
+.pa_componentTitleTest h2,
+h2.amtcmp,
+h2.featureHeading
+{
+	color: rgb( 204, 102, 0 ) !important;
+	font-size: 16px !important;
+	font-family: verdana, arial, helvetica, sans-serif !important;
+}
+
+.a-container
+{
+	min-width: 998px;
+	padding-top: 14px;
+	padding-right: 18px;
+	padding-bottom: 18px;
+	padding-left: 18px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+#dp .a-container
+{
+	margin-top: 20px;
+	padding-top: 0px;
+	min-width: 996px;
+}
+
+form
+{
+	margin-bottom: 14px;
+}
+
+#sims-fbt-form
+{
+	margin-bottom: 0px;
+}
+
+button,
+input,
+select,
+textarea
+{
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-size: 100%;
+	vertical-align: middle;
+}
+
+button,
+input
+{
+	line-height: normal;
+}
+
+input,
+select,
+textarea
+{
+	transition-property: all;
+	-webkit-transition-property: all;
+	transition-duration: 100ms;
+	-webkit-transition-duration: 100ms;
+	transition-timing-function: linear;
+	-webkit-transition-timing-function: linear;
+	transition-delay: initial;
+	-webkit-transition-delay: initial;
+	font-family: Arial, sans-serif;
+	line-height: 19px;
+	color: rgb( 17, 17, 17 );
+}
+
+ul
+{
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 18px;
+	margin-left: 18px;
+	color: rgb( 148, 148, 148 );
+}
+
+ol,
+ul
+{
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+.a-spacing-base,
+.a-ws .a-ws-spacing-base
+{
+	margin-bottom: 14px !important;
+}
+
+.a-spacing-top-base
+{
+	margin-top: 14px !important;
+}
+
+.sims-fbt-image-box
+{
+	float: left;
+	margin-right: 25px;
+	line-height: 116px;
+	vertical-align: middle;
+}
+
+ol.a-nostyle,
+ul.a-nostyle
+{
+	margin-left: 0px;
+	color: rgb( 17, 17, 17 );
+}
+
+ol.a-horizontal::after,
+ul.a-horizontal::after
+{
+	clear: both;
+}
+
+ol.a-horizontal::after,
+ol.a-horizontal::before,
+ul.a-horizontal::after,
+ul.a-horizontal::before
+{
+	display: table;
+	content: '';
+	line-height: 0;
+	font-size: 0px;
+}
+
+ol.a-horizontal,
+ul.a-horizontal
+{
+	display: block;
+	margin-left: 0px;
+}
+
+ul li
+{
+	list-style-type: disc;
+	list-style-position: initial;
+	list-style-image: initial;
+}
+
+ol li,
+ul li
+{
+	word-wrap: break-word;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+.a-align-center,
+.aok-align-center
+{
+	vertical-align: middle !important;
+}
+
+ol.a-nostyle li,
+ul.a-nostyle li
+{
+	list-style-type: none;
+	list-style-position: initial;
+	list-style-image: initial;
+}
+
+ol.a-horizontal li,
+ul.a-horizontal li
+{
+	display: inline-block;
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+ol .a-list-item,
+ul .a-list-item
+{
+	color: rgb( 17, 17, 17 );
+}
+
+.a-section
+{
+	margin-bottom: 22px;
+}
+
+.a-section:last-child
+{
+	margin-bottom: 0px;
+}
+
+img
+{
+	max-width: 100%;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: initial;
+	border-right-style: initial;
+	border-bottom-style: initial;
+	border-left-style: initial;
+	border-top-color: initial;
+	border-right-color: initial;
+	border-bottom-color: initial;
+	border-left-color: initial;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+}
+
+img
+{
+	vertical-align: top;
+}
+
+.sims-fbt-image
+{
+	vertical-align: middle;
+}
+
+.a-size-large
+{
+	font-family: Arial, sans-serif;
+	text-rendering: optimizelegibility;
+	font-size: 21px !important;
+	line-height: 1.3 !important;
+}
+
+.a-color-tertiary
+{
+	color: rgb( 118, 118, 118 ) !important;
+}
+
+ol.a-horizontal li.a-last,
+ol.a-horizontal li:last-child,
+ul.a-horizontal li.a-last,
+ul.a-horizontal li:last-child
+{
+	margin-right: 0px;
+}
+
+a,
+a:active,
+a:link,
+a:visited
+{
+	text-decoration: none;
+	color: rgb( 0, 102, 192 );
+}
+
+.sims-fbt-price-box
+{
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.a-size-base
+{
+	font-size: 13px !important;
+	line-height: 19px !important;
+}
+
+.a-color-secondary
+{
+	color: rgb( 85, 85, 85 ) !important;
+}
+
+.a-size-medium
+{
+	font-family: Arial, sans-serif;
+	text-rendering: optimizelegibility;
+	font-size: 17px !important;
+	line-height: 1.255 !important;
+}
+
+.a-color-price
+{
+	color: rgb( 177, 39, 4 ) !important;
+}
+
+.sims-fbt-buttons
+{
+	display: inline-block;
+	padding-top: 6px;
+}
+
+.a-spacing-mini, .a-ws .a-ws-spacing-mini
+{
+	margin-bottom: 6px !important;
+}
+
+.a-button
+{
+	background-image: initial;
+	background-repeat-x: initial;
+	background-repeat-y: initial;
+	background-attachment: initial;
+	background-position-x: initial;
+	background-position-y: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: rgb( 231, 233, 236 );
+	background-size: initial;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-top-color: rgb( 173, 177, 184 );
+	border-right-color: rgb( 162, 166, 172 );
+	border-bottom-color: rgb( 141, 144, 150 );
+	border-left-color: rgb( 162, 166, 172 );
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	cursor: pointer;
+	display: inline-block;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none !important;
+}
+
+.a-button-primary
+{
+	background-image: initial;
+	background-repeat-x: initial;
+	background-repeat-y: initial;
+	background-attachment: initial;
+	background-position-x: initial;
+	background-position-y: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: rgb( 240, 193, 75 );
+	background-size: initial;
+	border-top-color: rgb( 168, 135, 52 );
+	border-right-color: rgb( 156, 126, 49 );
+	border-bottom-color: rgb( 132, 106, 41 );
+	border-left-color: rgb( 156, 126, 49 );
+	color: rgb( 17, 17, 17 );
+}
+
+.a-button.a-button-small
+{
+	height: 22px;
+}
+
+.a-button-stack .a-button
+{
+	margin-bottom: 10px;
+	display: block;
+}
+
+.a-button-inner
+{
+	display: block;
+	position: relative;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	height: 29px;
+	box-shadow: rgba(255, 255, 255, 0.6) 0px 1px 0px inset;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.a-button .a-button-inner
+{
+	background-image: linear-gradient( rgb( 247, 248, 250 ), rgb( 231, 233, 236 ) );
+	background-repeat-x: initial;
+	background-repeat-y: initial;
+	background-attachment: initial;
+	background-position-x: initial;
+	background-position-y: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: initial;
+	background-size: initial;
+}
+
+.a-button-primary .a-button-inner
+{
+	background-image: linear-gradient( rgb( 247, 223, 165 ), rgb( 240, 193, 75 ) );
+	background-repeat-x: initial;
+	background-repeat-y: initial;
+	background-attachment: initial;
+	background-position-x: initial;
+	background-position-y: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: initial;
+	background-size: initial;
+}
+
+.a-button-primary .a-button-inner
+{
+	box-shadow: rgba(255, 255, 255, 0.4) 0px 1px 0px inset;
+}
+
+.a-button.a-button-small .a-button-inner,
+.a-button.a-button-small.a-button-disabled .a-button-inner,
+.a-button.a-button-small.a-button-disabled.a-button-focus .a-button-inner,
+.a-button.a-button-small.a-button-disabled:active .a-button-inner,
+.a-button.a-button-small.a-button-disabled:focus .a-button-inner,
+.a-button.a-button-small.a-button-disabled:hover .a-button-inner,
+.a-button.a-button-small.a-button-focus .a-button-inner,
+.a-button.a-button-small.a-button-focus:active .a-button-inner,
+.a-button.a-button-small:active .a-button-inner,
+.a-button.a-button-small:focus .a-button-inner,
+.a-button.a-button-small:focus:active .a-button-inner,
+.a-button.a-button-small:hover .a-button-inner
+{
+	height: 20px !important;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"]
+{
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+
+.a-button-input
+{
+	position: absolute;
+	background-color: rgb( 255, 255, 255 );
+	color: rgb( 255, 255, 255 );
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: initial;
+	border-right-style: initial;
+	border-bottom-style: initial;
+	border-left-style: initial;
+	border-top-color: initial;
+	border-right-color: initial;
+	border-bottom-color: initial;
+	border-left-color: initial;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	cursor: pointer;
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	opacity: 0.01;
+	outline-width: 0px;
+	outline-color: initial;
+	outline-style: initial;
+	overflow-y: visible;
+	overflow-x: visible;
+	z-index: 20;
+}
+
+.a-button-text
+{
+	background-color: transparent;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: initial;
+	border-right-style: initial;
+	border-bottom-style: initial;
+	border-left-style: initial;
+	border-top-color: initial;
+	border-right-color: initial;
+	border-bottom-color: initial;
+	border-left-color: initial;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	display: block;
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	line-height: 29px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	outline-width: 0px;
+	outline-color: initial;
+	outline-style: initial;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 11px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.a-button .a-button-text
+{
+	color: rgb( 17, 17, 17 );
+}
+
+.a-button-primary .a-button-text
+{
+	color: rgb( 17, 17, 17 );
+}
+
+.a-button.a-button-small .a-button-text
+{
+	font-size: 11px;
+	height: 20px;
+	line-height: 20px;
+	padding-top: 0px;
+	padding-right: 6px;
+	padding-bottom: 0px;
+	padding-left: 7px;
+}
+
+.a-button-stack .a-button:last-child
+{
+	margin-bottom: 0px;
+}
+
+.a-button + .a-button
+{
+	margin-left: 0.385em;
+}
+
+.a-button-stack .a-button + .a-button
+{
+	margin-left: 0px;
+}
+
+.a-text-center
+{
+	text-align: center !important;
+}
+
+.sims-fbt-details-link
+{
+	clear: left;
+	padding-bottom: 10px;
+}
+
+.a-box
+{
+	display: block;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-color: rgb( 221, 221, 221 );
+	border-right-color: rgb( 221, 221, 221 );
+	border-bottom-color: rgb( 221, 221, 221 );
+	border-left-color: rgb( 221, 221, 221 );
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	background-color: rgb( 255, 255, 255 );
+}
+
+.a-alert-inline
+{
+	display: inline-block;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: initial;
+	border-right-width: initial;
+	border-bottom-width: initial;
+	border-left-width: initial;
+	border-top-color: initial;
+	border-right-color: initial;
+	border-bottom-color: initial;
+	border-left-color: initial;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	vertical-align: middle;
+	background-color: transparent;
+}
+
+.a-box .a-box-inner
+{
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	position: relative;
+	padding-top: 14px;
+	padding-right: 18px;
+	padding-bottom: 14px;
+	padding-left: 18px;
+}
+
+.a-alert-inline .a-alert-container
+{
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	color: rgb( 196, 0, 0 );
+}
+
+.a-alert-inline-info .a-alert-container
+{
+	padding-left: 16px;
+	color: rgb( 43, 43, 43 );
+}
+
+em,
+i
+{
+	font-style: italic;
+}
+
+.a-icon,
+.a-link-emphasis::after
+{
+	background-image: url('i.png');
+	-webkit-background-size: 400px 650px;
+	background-size: 400px 650px;
+	background-repeat-x: no-repeat;
+	background-repeat-y: no-repeat;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.a-alert-inline-info .a-icon-alert,
+.a-icon-info.a-icon-small
+{
+	width: 6px;
+	background-position-x: -166px;
+	background-position-y: -130px;
+}
+
+.a-alert-inline .a-icon-alert
+{
+	height: 13px;
+	width: 14px;
+	position: absolute;
+	left: 2px;
+	top: 2px;
+}
+
+.a-alert-inline .a-alert-container .a-alert-content
+{
+	margin-bottom: 0px;
+	text-align: left;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.a-size-mini
+{
+	font-size: 11px !important;
+	line-height: 1.465 !important;
+}
+
+.sims-fbt-rows
+{
+	clear: left;
+}
+
+fieldset
+{
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: initial;
+	border-right-width: initial;
+	border-bottom-width: initial;
+	border-left-width: initial;
+	border-top-color: initial;
+	border-right-color: initial;
+	border-bottom-color: initial;
+	border-left-color: initial;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+fieldset.forScreenreaders
+{
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	clear: left;
+}
+
+label,
+legend
+{
+	display: block;
+	padding-left: 2px;
+	padding-bottom: 2px;
+	font-weight: 700;
+}
+
+fieldset.forScreenreaders legend span
+{
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+ol:last-child,
+ul:last-child
+{
+	margin-bottom: 0px !important;
+}
+
+.forScreenreaders ul li
+{
+	list-style-type: none !important;
+}
+
+label,
+legend
+{
+	display: block;
+	padding-left: 2px;
+	padding-bottom: 2px;
+	font-weight: 700;
+}
+
+.a-checkbox label,
+.a-radio label
+{
+	position: relative;
+	font-weight: 400;
+	color: rgb( 17, 17, 17 );
+	padding-left: 15px;
+	text-indent: -15px;
+	margin-left: 3px;
+	top: -2px;
+	padding-bottom: 0px;
+}
+
+fieldset label:last-child
+{
+	margin-bottom: 0px;
+}
+
+input[type="checkbox"]
+{
+	height: 13px;
+	width: 13px;
+	vertical-align: top;
+	position: relative;
+	bottom: -3px;
+}
+
+.sims-fbt-checkbox input
+{
+	display: none;
+}
+
+.sims-fbt-checkbox span
+{
+	margin-right: 2px;
+}
+
+.a-checkbox-label,
+.a-radio-label
+{
+	position: relative;
+	padding-left: 5px;
+	text-indent: 0px;
+	display: inline-block;
+}
+
+.a-text-bold
+{
+	font-weight: 700 !important;
+}
+
+.sims-fbt-this-item
+{
+	margin-right: 3px;
+}
+
+.a-size-small
+{
+	font-size: 12px !important;
+	line-height: 1.5 !important;
+}
+
+.a-row
+{
+	width: 100%;
+}
+
+.a-spacing-micro,
+.a-ws .a-ws-spacing-micro
+{
+	margin-bottom: 4px !important;
+}
+
+.a-spacing-top-micro
+{
+	margin-top: 4px !important;
+}
+
+.a-row::after
+{
+	clear: both;
+}
+
+.a-row::after,
+.a-row::before
+{
+	display: table;
+	content: '';
+	line-height: 0;
+	font-size: 0px;
+}
+
+.sims-fbt-seller-info
+{
+	display: none;
+}
+
+.a-color-success
+{
+	color: rgb( 0, 138, 0) !important;
+}
+
+.a-text-normal
+{
+	font-weight: 400 !important;
+	font-style: normal !important;
+	text-transform: none !important;
+	text-decoration: none !important;
+}
