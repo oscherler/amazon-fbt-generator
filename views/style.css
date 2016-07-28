@@ -663,91 +663,6 @@ input[type="submit"]
 	text-align: center !important;
 }
 
-.sims-fbt-details-link
-{
-	clear: left;
-	padding-bottom: 10px;
-}
-
-.a-box
-{
-	display: block;
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
-	border-bottom-right-radius: 4px;
-	border-bottom-left-radius: 4px;
-	border-top-width: 1px;
-	border-right-width: 1px;
-	border-bottom-width: 1px;
-	border-left-width: 1px;
-	border-top-color: rgb( 221, 221, 221 );
-	border-right-color: rgb( 221, 221, 221 );
-	border-bottom-color: rgb( 221, 221, 221 );
-	border-left-color: rgb( 221, 221, 221 );
-	border-top-style: solid;
-	border-right-style: solid;
-	border-bottom-style: solid;
-	border-left-style: solid;
-	border-image-source: initial;
-	border-image-slice: initial;
-	border-image-width: initial;
-	border-image-outset: initial;
-	border-image-repeat: initial;
-	background-color: rgb( 255, 255, 255 );
-}
-
-.a-alert-inline
-{
-	display: inline-block;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
-	border-top-width: initial;
-	border-right-width: initial;
-	border-bottom-width: initial;
-	border-left-width: initial;
-	border-top-color: initial;
-	border-right-color: initial;
-	border-bottom-color: initial;
-	border-left-color: initial;
-	border-image-source: initial;
-	border-image-slice: initial;
-	border-image-width: initial;
-	border-image-outset: initial;
-	border-image-repeat: initial;
-	vertical-align: middle;
-	background-color: transparent;
-}
-
-.a-box .a-box-inner
-{
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
-	border-bottom-right-radius: 4px;
-	border-bottom-left-radius: 4px;
-	position: relative;
-	padding-top: 14px;
-	padding-right: 18px;
-	padding-bottom: 14px;
-	padding-left: 18px;
-}
-
-.a-alert-inline .a-alert-container
-{
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-	color: rgb( 196, 0, 0 );
-}
-
-.a-alert-inline-info .a-alert-container
-{
-	padding-left: 16px;
-	color: rgb( 43, 43, 43 );
-}
-
 em,
 i
 {
@@ -764,37 +679,6 @@ i
 	background-repeat-y: no-repeat;
 	display: inline-block;
 	vertical-align: top;
-}
-
-.a-alert-inline-info .a-icon-alert,
-.a-icon-info.a-icon-small
-{
-	width: 6px;
-	background-position-x: -166px;
-	background-position-y: -130px;
-}
-
-.a-alert-inline .a-icon-alert
-{
-	height: 13px;
-	width: 14px;
-	position: absolute;
-	left: 2px;
-	top: 2px;
-}
-
-.a-alert-inline .a-alert-container .a-alert-content
-{
-	margin-bottom: 0px;
-	text-align: left;
-	font-size: 12px;
-	line-height: 15px;
-}
-
-.a-size-mini
-{
-	font-size: 11px !important;
-	line-height: 1.465 !important;
 }
 
 .sims-fbt-rows
