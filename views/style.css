@@ -435,11 +435,6 @@ ul.a-horizontal li:last-child
 	clear: left;
 }
 
-.sims-fbt-checkbox input
-{
-	display: none;
-}
-
 .sims-fbt-checkbox span
 {
 	margin-right: 2px;
