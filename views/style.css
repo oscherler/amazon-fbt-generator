@@ -33,47 +33,39 @@ h2
 	margin: 20px auto 0px auto;
 }
 
-form
-{
-	margin-bottom: 0px;
-}
-
-button,
-input,
-select,
-textarea
-{
-	margin: 0px;
-	font-size: 100%;
-	vertical-align: middle;
-}
-
-button,
 input
 {
-	line-height: normal;
-}
-
-input,
-select,
-textarea
-{
+	margin: 0px;
 	font-family: Arial, sans-serif;
+	font-size: 100%;
+	vertical-align: middle;
 	line-height: 19px;
-	color: rgb( 17, 17, 17 );
 }
 
 ul
 {
 	margin: 0px 0px 18px 18px;
 	padding: 0px;
-	color: rgb( 148, 148, 148 );
+}
+
+ul:last-child
+{
+	margin-bottom: 0px !important;
+}
+
+ul li
+{
+	list-style-type: disc;
+	list-style-position: initial;
+	list-style-image: initial;
+
+	word-wrap: break-word;
+	margin: 0px;
 }
 
 ul.a-nostyle
 {
 	margin-left: 0px;
-	color: rgb( 17, 17, 17 );
 }
 
 ul.a-horizontal::after
@@ -96,16 +88,6 @@ ul.a-horizontal
 	margin-left: 0px;
 }
 
-ul li
-{
-	list-style-type: disc;
-	list-style-position: initial;
-	list-style-image: initial;
-
-	word-wrap: break-word;
-	margin: 0px;
-}
-
 ul.a-nostyle li
 {
 	list-style-type: none;
@@ -122,24 +104,13 @@ ul.a-horizontal li
 	margin-left: 0px;
 }
 
-ul .a-list-item
-{
-	color: rgb( 17, 17, 17 );
-}
-
 ul.a-horizontal li.a-last,
 ul.a-horizontal li:last-child
 {
 	margin-right: 0px;
 }
 
-ul:last-child
-{
-	margin-bottom: 0px !important;
-}
-
-.a-spacing-base,
-.a-ws .a-ws-spacing-base
+.a-spacing-base
 {
 	margin-bottom: 14px !important;
 }
@@ -157,8 +128,7 @@ ul:last-child
 	vertical-align: middle;
 }
 
-.a-align-center,
-.aok-align-center
+.a-align-center
 {
 	vertical-align: middle !important;
 }
@@ -177,10 +147,6 @@ img
 {
 	max-width: 100%;
 	border-width: 0px;
-}
-
-img
-{
 	vertical-align: top;
 }
 
@@ -248,7 +214,7 @@ a:visited
 	padding-top: 6px;
 }
 
-.a-spacing-mini, .a-ws .a-ws-spacing-mini
+.a-spacing-mini
 {
 	margin-bottom: 6px !important;
 }
@@ -279,7 +245,6 @@ a:visited
 	border-right-color: rgb( 156, 126, 49 );
 	border-bottom-color: rgb( 132, 106, 41 );
 	border-left-color: rgb( 156, 126, 49 );
-	color: rgb( 17, 17, 17 );
 }
 
 .a-button.a-button-small
@@ -311,10 +276,6 @@ a:visited
 .a-button-primary .a-button-inner
 {
 	background-image: linear-gradient( rgb( 247, 223, 165 ), rgb( 240, 193, 75 ) );
-}
-
-.a-button-primary .a-button-inner
-{
 	box-shadow: rgba(255, 255, 255, 0.4) 0px 1px 0px inset;
 }
 
@@ -334,9 +295,6 @@ a:visited
 	height: 20px !important;
 }
 
-button,
-input[type="button"],
-input[type="reset"],
 input[type="submit"]
 {
 	cursor: pointer;
@@ -375,16 +333,6 @@ input[type="submit"]
 	white-space: nowrap;
 }
 
-.a-button .a-button-text
-{
-	color: rgb( 17, 17, 17 );
-}
-
-.a-button-primary .a-button-text
-{
-	color: rgb( 17, 17, 17 );
-}
-
 .a-button.a-button-small .a-button-text
 {
 	font-size: 11px;
@@ -413,14 +361,7 @@ input[type="submit"]
 	text-align: center !important;
 }
 
-em,
-i
-{
-	font-style: italic;
-}
-
-.a-icon,
-.a-link-emphasis::after
+.a-icon
 {
 	background-image: url('i.png');
 	-webkit-background-size: 400px 650px;
@@ -438,61 +379,24 @@ i
 fieldset
 {
 	border-style: none;
-	padding: 0px;
-	margin: 0px;
-}
-
-fieldset.forScreenreaders
-{
-	padding: 0px;
-	margin: 0px;
 	border-width: 0px;
-	clear: left;
+
+	padding: 0px;
+	margin: 0px;
 }
 
-label,
-legend
+label
 {
-	display: block;
-	padding-left: 2px;
-	padding-bottom: 2px;
-	font-weight: 700;
+    display: block;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    font-weight: 700;
 }
 
-fieldset.forScreenreaders legend span
-{
-	position: absolute;
-	left: -10000px;
-	top: auto;
-	width: 1px;
-	height: 1px;
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-	overflow: hidden;
-}
-
-.forScreenreaders ul li
-{
-	list-style-type: none !important;
-}
-
-label,
-legend
-{
-	display: block;
-	padding-left: 2px;
-	padding-bottom: 2px;
-	font-weight: 700;
-}
-
-.a-checkbox label,
-.a-radio label
+.a-checkbox label
 {
 	position: relative;
 	font-weight: 400;
-	color: rgb( 17, 17, 17 );
 	padding-left: 15px;
 	text-indent: -15px;
 	margin-left: 3px;
@@ -524,8 +428,7 @@ input[type="checkbox"]
 	margin-right: 2px;
 }
 
-.a-checkbox-label,
-.a-radio-label
+.a-checkbox-label
 {
 	position: relative;
 	padding-left: 5px;
@@ -541,58 +444,4 @@ input[type="checkbox"]
 .sims-fbt-this-item
 {
 	margin-right: 3px;
-}
-
-.a-size-small
-{
-	font-size: 12px !important;
-	line-height: 1.5 !important;
-}
-
-.a-row
-{
-	width: 100%;
-}
-
-.a-spacing-micro,
-.a-ws .a-ws-spacing-micro
-{
-	margin-bottom: 4px !important;
-}
-
-.a-spacing-top-micro
-{
-	margin-top: 4px !important;
-}
-
-.a-row::after
-{
-	clear: both;
-}
-
-.a-row::after,
-.a-row::before
-{
-	display: table;
-	content: '';
-	line-height: 0;
-	font-size: 0px;
-}
-
-.sims-fbt-seller-info
-{
-	display: none;
-}
-
-.a-color-success
-{
-	color: rgb( 0, 138, 0) !important;
-}
-
-.a-text-normal
-{
-	font-weight: 400 !important;
-	font-style: normal !important;
-	text-transform: none !important;
-	text-decoration: none !important;
 }
