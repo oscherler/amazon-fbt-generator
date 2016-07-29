@@ -49,7 +49,7 @@ fieldset
 	border-style: none;
 	border-width: 0px;
 
-	padding: 0px;
+	padding: 2px 0px 0px 0px; /* 2px to compensate for the missing <legend> */
 	margin: 0px;
 }
 
