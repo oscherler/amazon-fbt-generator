@@ -9,30 +9,25 @@
 	<div class="a-container">
 			<form>
 					<ul class="a-nostyle a-horizontal a-spacing-base a-spacing-top-base sims-fbt-image-box">
+						{% for item in items -%}
+						{% if loop.index0 -%}
+						<li class="a-align-center">
+							<span class="a-list-item a-size-large a-color-tertiary">+</span>
+						</li>
+						{%- endif -%}
 						<li class="a-align-center">
 							<span class="a-list-item">
 								<div class="a-section">
-									<img alt="American DJ Haze Generator Heaterless Fog Machine" src="https://images-na.ssl-images-amazon.com/images/I/41Mp8HpjHvL._AC_UL115_.jpg" class="sims-fbt-image">
+									<img alt="{{ item.title }}" src="{{ item.image }}" class="sims-fbt-image">
 								</div>
 							</span>
-						</li><!-- no-spacing
-						--><li class="a-align-center">
-							<span class="a-list-item a-size-large a-color-tertiary">+</span>
-						</li><!-- no-spacing
-						--><li class="a-align-center">
-							<span class="a-list-item">
-								<a class="a-link-normal" href="#">
-									<div class="a-section">
-										<img alt="American DJ Haze/G" src="https://images-na.ssl-images-amazon.com/images/I/31EgPO9ISzL._AC_UL115_.jpg" class="sims-fbt-image">
-									</div>
-								</a>
-							</span>
 						</li>
+						{%- endfor %}
 					</ul>
 					<div class="sims-fbt-price-box">
 						<div>
 							<span class="a-size-base a-color-secondary">Total price: </span>
-							<span class="a-size-medium a-color-price">$473.98</span>
+							<span class="a-size-medium a-color-price">${{ total }}</span>
 						</div>
 						<div class="sims-fbt-buttons">
 							<div class="a-button-stack a-spacing-mini">
@@ -54,17 +49,22 @@
 				<div class="sims-fbt-rows">
 					<fieldset>
 						<ul class="a-nostyle a-vertical">
+						{% for item in items -%}
 							<li class="a-spacing-mini">
 								<span class="a-list-item">
 									<span class="a-declarative">
 										<div class="a-checkbox sims-fbt-checkbox">
 											<label>
-												<input type="checkbox" checked=""><!-- no-spacing
-												--><span class="a-label a-checkbox-label">
+												<input type="checkbox" checked="">{#- no-spacing -#}
+												<span class="a-label a-checkbox-label">
 													<div>
-														<span class="sims-fbt-this-item a-text-bold">This item:</span><!-- no-spacing
-														--><span>American DJ Haze Generator Heaterless Fog Machine</span>
-														<span class="a-color-price">$429.99</span>
+														{% if loop.index0 %}
+														<a class="a-size-base a-link-normal" href="#">{{ item.title }}</a>
+														{% else %}
+														<span class="sims-fbt-this-item a-text-bold">This item:</span>{#- no-spacing -#}
+														<span>{{ item.title }}</span>
+														{% endif %}
+														<span class="a-color-price">${{ item.price }}</span>
 													</div>
 												</span>
 											</label>
@@ -72,23 +72,7 @@
 									</span>
 								</span>
 							</li>
-							<li class="a-spacing-mini">
-								<span class="a-list-item">
-									<span class="a-declarative">
-										<div class="a-checkbox sims-fbt-checkbox">
-											<label>
-												<input type="checkbox" checked=""><!-- no-spacing
-												--><span class="a-label a-checkbox-label">
-													<div>
-														<a class="a-size-base a-link-normal" href="#">American DJ Haze/G</a>
-														<span class="a-color-price">$43.99</span>
-													</div>
-												</span>
-											</label>
-										</div>
-									</span>
-								</span>
-							</li>
+						{%- endfor %}
 						</ul>
 					</fieldset>
 				</div>
