@@ -1,0 +1,5 @@
+fbt.title: 'Frequently Bought Together'
+price.total: 'Total price:'
+cart.button: '{2}Add both to Cart|{3}Add all three to Cart|]3,Inf]Add all to Cart'
+list.button: '{2}Add both to List|{3}Add all three to List|]3,Inf]Add all to List'
+this_item.title: 'This item:'

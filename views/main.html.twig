@@ -5,7 +5,7 @@
 </head>
 <body>
 
-	<h2>Frequently Bought Together</h2>
+	<h2>{{ 'fbt.title' | trans }}</h2>
 	<div class="a-container">
 			<form>
 					<ul class="a-nostyle a-horizontal a-spacing-base a-spacing-top-base sims-fbt-image-box">
@@ -26,7 +26,7 @@
 					</ul>
 					<div class="sims-fbt-price-box">
 						<div>
-							<span class="a-size-base a-color-secondary">Total price: </span>
+							<span class="a-size-base a-color-secondary">{{ 'price.total' | trans }} </span>
 							<span class="a-size-medium a-color-price">${{ total }}</span>
 						</div>
 						<div class="sims-fbt-buttons">
@@ -34,13 +34,13 @@
 								<span class="a-button a-button-primary a-button-small">
 									<span class="a-button-inner">
 										<input class="a-button-input" type="submit">
-										<span class="a-button-text" aria-hidden="true">Add both to Cart</span>
+										<span class="a-button-text" aria-hidden="true">{{ 'cart.button' | transchoice( items | length ) }}</span>
 									</span>
 								</span>
 								<span class="a-button a-button-normal a-button-small">
 									<span class="a-button-inner">
 										<input class="a-button-input" type="submit">
-										<span class="a-button-text a-text-center" aria-hidden="true">Add both to List</span>
+										<span class="a-button-text a-text-center" aria-hidden="true">{{ 'list.button' | transchoice( items | length ) }}</span>
 									</span>
 								</span>
 							</div>
@@ -61,7 +61,7 @@
 														{% if loop.index0 %}
 														<a class="a-size-base a-link-normal" href="#">{{ item.title }}</a>
 														{% else %}
-														<span class="sims-fbt-this-item a-text-bold">This item:</span>{#- no-spacing -#}
+														<span class="sims-fbt-this-item a-text-bold">{{ 'this_item.title' | trans }}</span>{#- no-spacing -#}
 														<span>{{ item.title }}</span>
 														{% endif %}
 														<span class="a-color-price">${{ item.price }}</span>
