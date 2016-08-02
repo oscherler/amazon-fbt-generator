@@ -7,15 +7,20 @@ use Symfony\Component\Translation\MessageSelector;
 use Symfony\Component\Translation\Loader\YamlFileLoader;
 use Symfony\Bridge\Twig\Extension\TranslationExtension;
 
-$loader = new Twig_Loader_Filesystem( __DIR__ . '/views' );
-$twig = new Twig_Environment( $loader );
+$languages = array( 'en', 'fr', 'de' );
 
-$translator = new Translator( 'en', new MessageSelector() );
+$translator = new Translator( $languages[0], new MessageSelector() );
+
 $yaml_loader = new YamlFileLoader();
-
 $translator->addLoader( 'yaml', $yaml_loader );
-$translator->addResource( 'yaml', __DIR__ . '/translations/messages.en.yml', 'en' );
 
+foreach( $languages as $language )
+{
+	$translator->addResource( 'yaml', __DIR__ . '/translations/messages.' . $language . '.yml', $language );
+}
+
+$twig_loader = new Twig_Loader_Filesystem( __DIR__ . '/views' );
+$twig = new Twig_Environment( $twig_loader );
 $twig->addExtension( new TranslationExtension( $translator ) );
 
 $items = array(
@@ -31,7 +36,11 @@ $items = array(
 	),
 );
 
-$total = array_reduce( $items, function( $total, $item ) { return $total + $item['price']; }, 0 );
+$total = array_reduce(
+	$items,
+	function( $total, $item ) { return $total + $item['price']; },
+	0
+);
 
 echo $twig->render(
 	'main.html.twig',

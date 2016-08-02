@@ -1,0 +1,5 @@
+fbt.title: 'Produits fréquemment achetés ensemble'
+price.total: 'Prix total:'
+cart.button: '{2}Ajouter les deux au panier|{3}Ajouter ces trois articles au panier|]3,Inf]Ajouter tous ces articles au panier'
+list.button: '{2}Ajouter les deux à votre liste|{3}Ajouter ces trois articles à votre liste|]3,Inf]Ajouter tous ces articles à votre liste'
+this_item.title: 'Cet article:'
