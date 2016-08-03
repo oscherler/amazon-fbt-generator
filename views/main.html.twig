@@ -28,7 +28,7 @@
 					<div class="sims-fbt-price-box">
 						<div>
 							<span class="a-size-base a-color-secondary">{{ 'price.total' | trans }} </span>
-							<span class="a-size-medium a-color-price">${{ total }}</span>
+							<span class="a-size-medium a-color-price">{{ currency }}{{ total }}</span>
 						</div>
 						<div class="sims-fbt-buttons">
 							<div class="a-button-stack a-spacing-mini">
@@ -65,7 +65,7 @@
 														<span class="sims-fbt-this-item a-text-bold">{{ 'this_item.title' | trans }}</span>{#- no-spacing -#}
 														<span>{{ item.title }}</span>
 														{% endif %}
-														<span class="a-color-price">${{ item.price }}</span>
+														<span class="a-color-price">{{ currency }}{{ item.price }}</span>
 													</div>
 												</span>
 											</label>
