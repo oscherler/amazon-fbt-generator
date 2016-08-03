@@ -10,10 +10,14 @@ use Symfony\Bridge\Twig\Extension\TranslationExtension;
 use Goutte\Client;
 use Symfony\Component\DomCrawler\Crawler;
 
+use Doctrine\Common\Cache\FilesystemCache;
+
 # avoid warnings when using Goutte
 ini_set( 'date.timezone', 'Europe/Zurich' );
 
 $languages = array( 'en', 'fr', 'de' );
+$cache_path = __DIR__ . '/cache';
+$product_cache_path = $cache_path . '/product';
 
 $translator = new Translator( $languages[0], new MessageSelector() );
 
@@ -31,24 +35,35 @@ $twig->addExtension( new TranslationExtension( $translator ) );
 
 $client = new Client();
 
+$product_cache = new FilesystemCache( $product_cache_path );
+
 $items = array();
 $currency = 'EUR ';
 
 array_shift( $argv );
 foreach( $argv as $arg )
 {
-	$file_name = $arg . '.html';
-	
 	# poor man’s cache
-	if( file_exists( $file_name ) )
+	if( $product_cache->contains( $arg ) )
 	{
-		$crawler = new Crawler( file_get_contents( $file_name ) );
+		$cached = $product_cache->fetch( $arg );
+		$success = $cached['success'];
+		$crawler = new Crawler( $cached['body'] );
 	}
 	else
 	{
 		$crawler = $client->request( 'GET', 'https://www.amazon.com/dp/' . $arg );
-		file_put_contents( $file_name, $crawler->html() );
+		$status = $client->getResponse()->getStatus();
+		$success = $status >= 200 && $status < 300;
+
+		$product_cache->save( $arg, array(
+			'success' => $success,
+			'body' => $crawler->html()
+		) );
 	}
+	
+	if( ! $success )
+		continue;
 	
 	try
 	{
@@ -84,7 +99,6 @@ foreach( $argv as $arg )
 	{
 		# all properties are previously initialised
 	}
-	
 	
 	$items[] = array(
 		'title' => $title,
