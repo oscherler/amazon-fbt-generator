@@ -4,7 +4,8 @@
         "symfony/translation": "^3.1",
         "symfony/twig-bridge": "^3.1",
         "symfony/yaml": "^3.1",
-        "fabpot/goutte": "^3.1"
+        "fabpot/goutte": "^3.1",
+        "doctrine/cache": "^1.6"
     },
     "require-dev": {
         "symfony/var-dumper": "^3.1"
